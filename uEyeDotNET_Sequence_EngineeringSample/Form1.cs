@@ -170,6 +170,7 @@ namespace uEyeDotNET_Sequence_EngineeringSample
            uEye.Types.CameraInformation[] CameraList;
            uEye.Info.Camera.GetCameraList(out CameraList);
            MessageBox.Show(CameraList[0].SerialNumber);
+           MessageBox.Show(CameraList[0].InUse.ToString());
         }
 
     }
